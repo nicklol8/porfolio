@@ -5,9 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Nick Ortiz</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <link rel="Stylesheet" href="css/main.css" />
+    <script src="js/app.js"></script>
   </head>
   <body>
-    <h1>Hi, I'm Nick.</h1>
+    <header>
+      <h1>Hi, I'm Nick</h1>
+      <h4>This is my brand statement</h4>
+    </header>
+    <main>
+      <div class="container">
+        <div id="pokestop" class="project-pic" onclick="openPokestop()">
+          <img
+            class="project-pic"
+            src="pokestop.png"
+            alt="pokestop screenshot"
+          />
+          <div id="pokestop-modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">X</span>
+              <video
+                class="video"
+                src="pokestop.mp4"
+                playsinline=""
+                muted=""
+                autoplay=""
+                loop=""
+              ></video>
+            </div>
+          </div>
+        </div>
+        <div id="recipebook" class="project-pic">
+          <img
+            class="project-pic"
+            src="recipebook.png"
+            alt="recipebook screenshot"
+          />
+        </div>
+        <div id="foodso" class="project-pic">
+          <img class="project-pic" src="foodso.png" alt="foodso screenshot" />
+        </div>
+        <div id="donutdash" class="project-pic">
+          <img
+            class="project-pic"
+            src="donutdash.png"
+            alt="donutdash screenshot"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2>This is where you learn more about me</h2>
+      <a href="#">And where links to contact me go</a>
+    </footer>
   </body>
 </html>
