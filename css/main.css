@@ -6,21 +6,16 @@ body {
 }
 .project-pic {
   max-width: 400px;
-  cursor: pointer;
 }
-.container {
-  max-width: 80%;
-  display: flex;
-  margin: 0 auto;
-  align-content: space-between;
-  flex-wrap: wrap;
+.card {
+  max-width: 400px;
+  cursor: pointer;
 }
 .video {
   max-width: 400px;
 }
 .modal {
   display: none;
-  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -30,6 +25,8 @@ body {
   height: 800px;
   max-height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  background-size: 100%;
+  z-index: 1;
 }
 .modal-content {
   background-color: #fefefe;
@@ -37,9 +34,15 @@ body {
   padding: 20px;
   width: 80%;
 }
+.close-btn {
+  color: #fefefe;
+  cursor: pointer;
+  text-align: right;
+  padding: 0 20px 0 0;
+}
 .about-me {
   margin: 0 auto;
-  max-width: 60%;
+  max-width: 75%;
 }
 h1,
 h3,

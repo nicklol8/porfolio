@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nick Ortiz</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css"
+      rel="stylesheet"
+    />
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="Stylesheet" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Nick Ortiz</h1>
+      <a href="https://github.com/nicklol8">github</a>
+      <a href="https://www.linkedin.com/in/no-nicholas-ortiz/">linkedin</a>
+      <a href="Nicholas_Ortiz_Resume.pdf">resume</a>
+      <a href="mailto:nick.ortiz.dev@gmail.com">email</a>
+      <h4>
+        Hi! I'm Nick, a software engineer based in Fairfield County, CT. Here to
+        write some clean, efficient, and DRY code!
+      </h4>
+      <p class="about-me">
+        My first interactions with software engineering started in high school,
+        where I was picked to attend an information technology magnet school in
+        Stamford. While it gave me skills in everything Microsoft, it also gave
+        me the opportunity to try my hand at everything from visual basic
+        programming, GIS, animation, photography, and most importantly it opened
+        to door to web design, starting with Adobe Dreamweaver.<br />
+        Holding onto that basic foundation I found myself walking down the path
+        of psychology in college and graduated with a Bachelors degree. After
+        college I immediately started to work with special needs children, and
+        although I was rewarded with patience and problem solving skills, I
+        found myself looking back at all the previous skills I had once known
+        and started the “What if...” game. Here is the start of that game: my
+        projects and portfolio, I hope you enjoy as much as I enjoyed making
+        them
+      </p>
+    </header>
+    <div class="container">
+      <div>
+        <h3>My Projects:</h3>
+        <span>Click on the screenshots to learn more!</span>
+      </div>
+      <div class="container">
+        <div id="pokestop" class="project-pic" onclick="pokestopModal()">
+          <img
+            class="project-pic"
+            src="pokestop.png"
+            alt="pokestop screenshot"
+          />
+          <div id="pokestop-modal" class="modal">
+            <div class="modal-content">
+              <div onclick="pokestopModal()">
+                <video
+                  class="video"
+                  src="pokestop.mp4"
+                  playsinline=""
+                  muted=""
+                  autoplay=""
+                  loop=""
+                ></video>
+                <p>
+                  The Pokéstop: my first app! Using the pokéapi, I was able to
+                  create a version of the Pokédex to fetch info about whatever
+                  pokemon the user chooses! Including fetching and displaying
+                  sprites, type, and extra flavor text. After completing the
+                  pokédex, I moved on to recreate the "Who's that Pokémon" game
+                  featured in the original show! This was a very fun project,
+                  and seeing my favorite childhood memories come to life I
+                  realized the endless possibilities of things to create!
+                </p>
+                <h3>Technologies Used:</h3>
+                <p>
+                  Javascript, CSS, HTML, jQuery
+                </p>
+                <a href="https://nicklol8.github.io/pokeinfo/">Live site</a>
+                <a
+                  href="https://github.com/nicklol8/nicklol8.github.io/tree/master/pokeinfo"
+                  >Github Repo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="recipebook" class="project-pic" onclick="recipebookModal()">
+          <img
+            class="project-pic"
+            src="recipebook.png"
+            alt="recipebook screenshot"
+          />
+          <div id="recipebook-modal" class="modal">
+            <div class="modal-content">
+              <div onclick="recipebookModal()">
+                <video
+                  class="video"
+                  src="recipebook.mp4"
+                  playsinline=""
+                  muted=""
+                  autoplay=""
+                  loop=""
+                ></video>
+                <p>
+                  My personal recipe book! A solution for a problem I had:
+                  somewhere to store all my recipes that is easy to access at
+                  home and the store! Users can browse recipes, or sign up and
+                  add some of their own . A full-stack Express/EJS app with a
+                  Mongo database.
+                </p>
+                <h3>Technologies Used:</h3>
+                <p>
+                  Javascript, EJS, Express, MongoDB, bCrypt, CSS, Materialize
+                </p>
+                <a href="https://nicks-recipe-book.herokuapp.com/">Live site</a>
+                <a href="https://github.com/nicklol8/recipebook">Github Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="foodso" class="project-pic">
+          <img
+            class="project-pic"
+            src="foodso.png"
+            alt="foodso screenshot"
+            onclick="foodsoModal()"
+          />
+          <div id="foodso-modal" class="modal">
+            <div class="modal-content">
+              <div onclick="foodsoModal()">
+                <video
+                  class="video"
+                  src="foodsodemo.mp4"
+                  playsinline=""
+                  muted=""
+                  autoplay=""
+                  loop=""
+                ></video>
+                <p>
+                  My first experience with group coding, and a fun project to
+                  work on! We decided to make an app where we could add
+                  restaurants(including a few favorite items from the menu) in
+                  our area to the database. When logged in, users have access to
+                  a favorites list, where they can add restaurants they like for
+                  easy access.
+                </p>
+                <h3>Technologies Used:</h3>
+                <p>
+                  React, JSX, Bootstrap, axios, Express, MongoDB
+                </p>
+                <a href="http://disastrous-north.surge.sh/">Live site</a>
+                <a href="https://github.com/nicklol8/foodso">Github Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="donutdash" class="project-pic">
+          <img
+            class="project-pic"
+            src="donutdash.png"
+            alt="donutdash screenshot"
+            onclick="donutdashModal()"
+          />
+          <div id="donutdash-modal" class="modal">
+            <div class="modal-content">
+              <div onclick="donutdashModal()">
+                <!-- <video
+                  class="video"
+                  src="recipebook.mp4"
+                  playsinline=""
+                  muted=""
+                  autoplay=""
+                  loop=""
+                ></video> -->
+                <p>
+                  My first game! Given the freedom to create anything, and I
+                  decided to make an infinite running game! A very fun
+                  challenge, and really tested my ability to read docs and
+                  problem solve on my own, using Phaser, a Javascript framework
+                  no one around had any experience with. Includes a rails
+                  backend using sql to keep track of the leaderboard!
+                </p>
+                <h3>Technologies Used:</h3>
+                <p>
+                  Phaser, Javascript, Rails, SQL, postgres
+                </p>
+                <a href="https://donutdash.netlify.com/">Live site</a>
+                <a href="https://github.com/nicklol8/my_runner">Github Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Contact me:</h3>
+    <form name="contact" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name"/></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email"/></label>
+      </p>
+      <p>
+        <label>Your Message: <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
+  </body>
+</html>
