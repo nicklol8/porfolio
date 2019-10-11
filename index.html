@@ -248,24 +248,30 @@
       <div class="divider"></div>
       <h3>Contact Me:</h3>
       <div class="row">
-        <form class="col s12" name="contact" method="POST" data-netlify="true">
+        <form
+          class="col s12"
+          name="contact"
+          action="https://mailthis.to/nick.ortiz"
+          method="POST"
+        >
           <div class="row">
             <div class="input-field col s4 offset-s1">
-              <input id="name" type="text" />
+              <input name="name" type="text" />
               <label for="name">Name</label>
             </div>
             <div class="input-field col s6">
-              <input id="email" type="email" />
+              <input name="email" type="email" />
               <label for="email">email</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s10 offset-s1">
-              <textarea id="message" class="materialize-textarea"></textarea>
+              <textarea name="message" class="materialize-textarea"></textarea>
               <label for="message">Your Message</label>
             </div>
           </div>
-          <button class="btn cyan lighten-2" type="submit">Send</button>
+          <!-- <button class="btn cyan lighten-2" type="submit">Send</button> -->
+          <input type="submit" value="send" class="btn cyan lighten-2" />
         </form>
       </div>
     </div>
